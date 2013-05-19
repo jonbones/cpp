@@ -165,9 +165,9 @@ int main() {
 	outputFile<<"Prim's algoirthm took "<< clock.elapsed() <<" seconds"<<std::endl;	
 
 	do{
-	weight += MSTe.back()->get_weight();
-	outputFile<<"From "<<MSTe.back()->get_from() <<" [ "<< nodes[MSTe.back()->get_from()]->get_name() <<" ] to "<<MSTe.back()->get_to()<< " [ "<< nodes[MSTe.back()->get_to()]->get_name() <<" ] | Weight "<<MSTe.back()->get_weight()<<std::endl;
-	MSTe.pop_back();
+		weight += MSTe.back()->get_weight();
+		outputFile<<"From "<<MSTe.back()->get_from() <<" [ "<< nodes[MSTe.back()->get_from()]->get_name() <<" ] to "<<MSTe.back()->get_to()<< " [ "<< nodes[MSTe.back()->get_to()]->get_name() <<" ] | Weight "<<MSTe.back()->get_weight()<<std::endl;
+		MSTe.pop_back();
 	} while (!MSTe.empty());
 
 	outputFile<<"Loaded "<<num_of_points-1<<" sites."<<std::endl;
