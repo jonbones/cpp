@@ -1,5 +1,5 @@
 //Jonathan S. Chandranathan
-//Old code I wrote to play around with graphs.  Calculates the shortest path around DisneyLand using Prim's algorithm.
+//Calculates the shortest path around DisneyLand using Prim's algorithm.
 
 #include <fstream>
 #include <iostream>
