@@ -46,7 +46,6 @@ private:
 	std::string _name;
 	int _id, _x_cord, _y_cord;
 	bool _seen;
-
 public:
 	Node(std::string const name, int const id, int const x_cord, int const y_cord) {
 		_name = name;
@@ -122,6 +121,7 @@ int main() {
 	}
 
 	//Step 2:  Use Prim's algorithm to create minimmum spanning tree
+	//UPDATE NEEDED:  Better OOD.  Should be done in a separate function, not in main.
 	Node* seen = nodes[1];
 	MSTv.push_back(seen);
 	for (i= 1; i < num_of_points; i++){
